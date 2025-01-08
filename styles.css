@@ -55,6 +55,42 @@ header h1 {
     letter-spacing: 2px;
 }
 
+/*beneficios de comprar*/
+/* Estilo da Seção de Benefícios */
+.benefits {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefits p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.benefits ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.benefits ul li strong {
+    color: #007bff;
+}
+
 
 /* Galeria de Produtos */
 .product-gallery {
