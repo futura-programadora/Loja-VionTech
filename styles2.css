@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    color:black;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.banner {
+    background-color: #001F3F;
+    height: 300px;
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.banner img {
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 200px; /* Garante que a imagem não exceda a largura do contêiner */
+}
+
+.sobre-nos {
+    background-color: #001F3F;
+    color: white;
+    padding: 10px ;
+}
+
+.sessao-autora {
+    display: flex; /* Ativa o Flexbox no contêiner pai */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza os itens em coluna (se necessário) */
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+    
+}
+
+.autora {
+    border-radius: 10px;
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse o contêiner */
+    height: 300px; /* Mantém a proporção da imagem */
+}
+
+.fala-autora > p {
+    text-align: justify;
+    margin: 20px;
+
+}
+
+.nossos-servicos-detalhes {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens da lista */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* Necessário para o pseudo-elemento */
+}
+
+nav ul li a::after {
+    content: ''; /* Cria um pseudo-elemento */
+    display: block; /* Permite que o elemento tenha altura */
+    width: 100%; /* Largura total do link */
+    height: 2px; /* Altura da linha */
+    background-color: blue; /* Cor da linha */
+    position: absolute; /* Posiciona o pseudo-elemento */
+    left: 0; /* Alinha à esquerda */
+    bottom: -5px; /* Espaço entre o texto e a linha */
+    transform: scaleX(0); /* Começa invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Torna a linha visível ao passar o mouse */
+}
+
+.pagina {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+.materiais {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    
+    
+}
+
+.card {
+    background: #f0f0f0;
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    border: 1px solid #ccc;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.card1 {
+    display: flex;
+    background: #f0f0f0;
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    border: 1px solid #ccc;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.servicos-lista {
+    list-style: none;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+.servicos-lista li {
+    background: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #001F3F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que as seções se ajustem em telas menores */
+    width: 100vw;
+}
+
+footer section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    margin: 10px; /* Margem para espaçamento */
+}
+
+.redes-sociais ul {
+    display: flex; /* Mantém os ícones em linha */
+    gap: 25px; /* Espaçamento entre os ícones */
+}
+
+.redes-sociais i {
+    font-size: 24px; /* Tamanho dos ícones */
+}
+
+.descricao-servicos p {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #001F3F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    max-width: 150px;
+}
